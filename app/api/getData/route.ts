@@ -10,8 +10,8 @@ export async function GET(): Promise<NextResponse>{
 
     // Make an API request to Visual Crossing to fetch weather data for the specified city.
     const res = await fetch(
-        // `https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=${API_KEY}`
-        `https://api.thecatapi.com/v1/images/search?limit=10`
+        `https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=${API_KEY}`
+        // `https://api.thecatapi.com/v1/images/search?limit=10`
     );
 
     // If the API request fails (status code other than 200), return a 500 Internal Server Error response
